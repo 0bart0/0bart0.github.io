@@ -4,7 +4,7 @@ layout: default
 
 <div class="home">
   {{ content }}
-
+  
   {% if site.posts.size > 0 %}
     <h2>Recent Posts</h2>
     <ul class="post-list">
@@ -23,4 +23,12 @@ layout: default
       {% endfor %}
     </ul>
   {% endif %}
+  <h2>Moje projekty</h2>
+<ul>
+{% for project in site.data.projects %}
+  <li>
+    <a href="{{ project.url }}">{{ project.title }}</a>: {{ project.description }}
+  </li>
+{% endfor %}
+</ul>
 </div>
