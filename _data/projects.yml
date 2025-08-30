@@ -1,1 +1,9 @@
+- title: Mój Projekt 1
+  description: Krótki opis projektu.
+  url: https://github.com/0bart0/moj-projekt-1
+  image: /assets/img/moj-projekt-1.jpg
 
+- title: Mój Projekt 2
+  description: Drugi projekt, coś ciekawego.
+  url: https://github.com/0bart0/moj-projekt-2
+  image: /assets/img/moj-projekt-2.jpg
