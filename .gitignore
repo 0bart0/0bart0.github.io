@@ -1,1 +1,5 @@
-Genfile.lock
+Gemfile.lock
+vendor/
+.bundle/
+_site/
+.sass-cache/
