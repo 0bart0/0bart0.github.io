@@ -1,0 +1,19 @@
+source "https://rubygems.org"
+
+# Core Jekyll
+gem "jekyll", "~> 3.9.0"
+
+# Theme
+gem "jekyll-theme-modernist"
+
+# Plugins
+gem "jekyll-feed", "~> 0.6"
+gem "kramdown-parser-gfm"
+
+# Windows support  
+platforms :mingw, :x64_mingw, :mswin, :jruby do
+  gem "tzinfo", "~> 1.2"
+  gem "tzinfo-data"
+end
+
+gem "wdm", "~> 0.1.0", :platforms => [:mingw, :x64_mingw, :mswin]

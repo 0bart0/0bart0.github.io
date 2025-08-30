@@ -24,20 +24,35 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
 
+# GitHub metadata fallbacks to avoid API calls
+github:
+  repository_name: "0bart0.github.io"
+  repository_url: "https://github.com/0bart0/0bart0.github.io"
+  owner_name: "0bart0"
+  owner_url: "https://github.com/0bart0"
+  project_tagline: "Personal website"
+  is_project_page: true
+  zip_url: "https://github.com/0bart0/0bart0.github.io/archive/main.zip"
+  tar_url: "https://github.com/0bart0/0bart0.github.io/archive/main.tar.gz"
+
 # Build settings
 markdown: kramdown
 theme: jekyll-theme-modernist
 plugins:
   - jekyll-feed
 
+# Disable GitHub metadata to avoid API issues during build
+repository: 0bart0/0bart0.github.io
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - Gemfile_dev
+  - _config_dev.yml
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
