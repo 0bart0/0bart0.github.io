@@ -5,3 +5,4 @@
 layout: home
 title: Bartosz Kempa personal webpage
 ---
+To jest nowa tresc
